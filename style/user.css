@@ -1,0 +1,60 @@
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      color: white;
+      margin: 30px;
+  }
+
+  .grid-container .login,
+  .grid-container .register {
+      padding: 20px;
+      background-color: #00b7ff;
+      border-radius: 10px;
+  }
+
+  .grid-container form {
+      margin-bottom: 20px;
+      padding-top: 30px;
+  }
+
+  .grid-container label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .grid-container input[type="text"],
+  .grid-container input[type="password"],
+  .grid-container input[type="email"],
+  .grid-container input[type="tel"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: none;
+      outline: none;
+  }
+
+  .grid-container input[type="checkbox"] {
+      border: none;
+      outline: none;
+      margin-right: 10px;
+      margin: 10px;
+  }
+
+  .grid-container button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+  }
+
+  .grid-container a {
+      text-decoration: none;
+  }
+
+  .grid-container #error-message {
+      color: red;
+      margin-top: 10px;
+  }

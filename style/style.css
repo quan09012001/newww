@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1920px;
+}
+
+:root {
+    --color-text: #ffffff;
+    --bg-color: #154054;
+    --button-color: #00b7ff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    font-size: 15px;
+    background-color: var(--button-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--bg-color);
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'logo search cart'
+    ;
+    margin-bottom: 1px;
+}
+
+header>img {
+    margin-left: 30%;
+    height: 60px;
+    grid-area: logo;
+}
+
+header>.search {
+    grid-area: search;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+header>.cart {
+    grid-area: cart;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header input[type="text"] {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+header input[type="submit"] {
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: var(--button-color);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-text);
+}
+
+nav {
+    background-color: var(--bg-color);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 35px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+main>.img-container {
+    position: relative;
+}
+
+main .bg-container {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+main .bg-container>.myselect {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-right: 10%;
+}
+
+main .bg-container>button {
+    background-color: var(--button-color);
+    color: var(--color-text);
+    border: none;
+    padding: 11px;
+    width: 20%;
+    cursor: pointer;
+}
+
+main>.tour h2,
+main>.tour p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+main>.tour h2 {
+    padding-top: 30px;
+}
+
+/* màu icon */
+
+.fa-cart-plus {
+    color: var(--color-text);
+    font-size: 25px;
+}
+
+main .conten-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*xuống dòng*/
+    justify-content: center;
+}
+
+main .conten {
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+}
+
+main .conten img {
+    max-width: 350px;
+    max-height: auto;
+}
+
+main .conten h3 {
+    color: var(--button-color);
+}
+
+main .conten h3 del {
+    color: var(--bg-color);
+}
+
+/* Ẩn thanh điều hướng khi chưa phát */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+main .conten2 {
+    display: grid;
+    grid-template-areas:
+        'video img1 img2 img3'
+        'video img4 img5 img6';
+    justify-content: center;
+}
+
+main .conten2>* {
+    margin: -2px;
+}
+
+main .conten2 .conten2-chill1 {
+    grid-area: video;
+}
+
+main .conten2 .conten2-chill2 {
+    grid-area: img1
+}
+
+main .conten2 .conten2-chill3 {
+    grid-area: img2;
+}
+
+main .conten2 .conten2-chill4 {
+    grid-area: img3;
+}
+
+main .conten2 .conten2-chill5 {
+    grid-area: img4;
+}
+
+main .conten2 .conten2-chill6 {
+    grid-area: img5;
+}
+
+main .conten2 .conten2-chill7 {
+    grid-area: img6;
+}
+
+footer>.ft-box {
+    height: 300px;
+    background-color: var(--button-color);
+    padding-left: 50px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr;
+    grid-template-areas:
+        'a address menu-ft1  maps'
+        'a bottom-ft bottom-ft bottom-ft';
+}
+
+footer .addrest {
+    grid-area: address;
+}
+
+footer .addrest>*, footer .menu-ft1>*, footer .menu-ft2>*{
+    color: var(--color-text);
+    padding: 15px;
+}
+
+footer .menu-ft1 {
+    grid-area: menu-ft1;
+}
+
+.bottom-footer {
+    height: 30px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    grid-row: bottom-ft;
+}
+
+.conten .img1 {
+    position: relative;
+    text-align: center;
+}
+
+.conten .text1 {
+    position: absolute;
+    top:40%;
+    left:27%;
+    display: none;
+    background-color: #00b7ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conten:hover .text1 {
+    display: block;
+}

@@ -1,0 +1,83 @@
+table,
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 13px;
+    margin: 10PX;
+    text-align: center;
+    color: white;
+}
+
+input[type="number"] {
+    width: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cart-box {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #00b7ff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.text3 {
+    width: 400px;
+    padding-top: 10px;
+}
+
+.text3 >* {
+    padding: 15px;
+}
+
+.header {
+    position: relative;
+    height: 287.5px;
+    border: 1px solid white;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+}
+
+.thumbnail {
+    width: 87.5px;
+    height: 57.5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-image {
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #00b7ff;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: black;
+}

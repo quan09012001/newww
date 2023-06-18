@@ -1,0 +1,37 @@
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'cs1 cs2 cs3';
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contact-box>* {
+    background-color: #00b7ff;
+    margin: 5%;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.contact-box>*:hover{
+    background-color: #154054;
+}
+
+.cs1 {
+    grid-area: cs1;
+}
+
+.cs2 {
+    grid-area: cs2;
+}
+
+.cs3 {
+    grid-area: cs3;
+}
+
+.contact-box>*>* {
+    padding-bottom: 30px;
+}
